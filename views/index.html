@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <title>Trash Taste | Home</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        font-size: 21px;
+        transition: all .4s ease;
+    }
+
+    body {
+        background: #eee;
+    }
+
+    .play-btn {
+        font-size: 32px;
+        color: #eee;
+    }
+
+    .play-btn:hover {
+        color: #fff;
+    }
+
+    .container {
+        max-width: 350px;
+        margin: auto;
+        align-items: center;
+        border-radius: 6px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, .3);
+        background: #d42424;
+        color: #eee;
+        text-align: center;
+        padding: 18px 32px;
+        font-size: 19px;
+        margin-bottom: 18px;
+    }
+
+    .header h3 {
+        font-weight: 400;
+        cursor: pointer;
+        animation: bobble 2s;
+    }
+
+    .header h3 span {
+        background: #242424;
+        padding: 4px;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+
+    @keyframes bobble {
+        0% {
+            transform: translateX(120px);
+        }
+
+        50% {
+            transform: translateX(-120px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    video {
+        border-radius: 9px;
+        box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, .3);
+        width: 100%;
+    }
+
+    hr {
+        border-top: none;
+        border-bottom: 1px solid #242424;
+        margin: 12px;
+    }
+
+    h2.video-title {
+        font-weight: 400;
+        font-size: 18px;
+        padding-bottom: 6px;
+        text-align: right;
+        color: #242424;
+    }
+
+    p.video-description {
+        font-size: 14px;
+        color: #242424;
+    }
+
+    .icons {
+        text-align: center;
+    }
+
+    .icon {
+        padding: 12px;
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        color: #d42424;
+        transform: translateX(2px);
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #d42424;
+        color: #eee;
+        padding: 18px;
+        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, .3);
+
+    }
+
+    footer h3 {
+        font-weight: 400;
+        font-size: 14px;
+        border-right: 1px solid #fff;
+    }
+
+    footer a {
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+        color: #d42424;
+        background: #242424;
+        padding: 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+
+    footer a:hover {
+        box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, .2);
+
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h3 class="logo"><i class="fas fa-play play-btn"></i></h3>
+        <h3><span>Trash</span> Taste</h3>
+    </div>
+    <div class="container">
+        <video class="video" height="auto" controls="controls" preload="none" poster="/img/poster.jpg"
+            onclick="this.play()">
+            <source type="video/mp4" src="/videos/clip.mp4">
+        </video>
+        <hr>
+        <h2 class="video-title">Happy Sugar Life Ep.1</h2>
+        <p class="video-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor aut odio fuga et commodi ab id quidem
+            sed ipsum....
+            <hr>
+        <div class="icons">
+            <i class="fas fa-globe icon"></i>
+            <i class="fas fa-share-alt icon"></i>
+            <i class="fas fa-download icon"></i>
+            <i class="fas fa-save icon"></i>
+            <i class="fas fa-add icon"></i>
+        </div>
+    </div>
+    <div class="container">
+        <video class="video" height="auto" controls="controls" preload="none" poster="/img/poster.jpg"
+            onclick="this.play()">
+            <source type="video/mp4" src="/videos/clip.mp4">
+        </video>
+        <hr>
+        <h2 class="video-title">Happy Sugar Life Ep.2</h2>
+        <p class="video-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor aut odio fuga et commodi ab id quidem
+            sed ipsum....
+            <hr>
+        <div class="icons">
+            <i class="fas fa-globe icon"></i>
+            <i class="fas fa-share-alt icon"></i>
+            <i class="fas fa-download icon"></i>
+            <i class="fas fa-save icon"></i>
+            <i class="fas fa-add icon"></i>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3>Consider Subscribing to <span>Trash Taste</span></h3>
+        <a href="#" class="link">Subscribe</a>
+
+    </footer>
+
+    <script src="/assets/fontawesome/js/all.js"></script>
+</body>
+
+</html>
